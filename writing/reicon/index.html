@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Building Reicon - 2,700+ UI Icons - Dev Chauhan</title>
+  <meta name="title" content="Building Reicon - 2,700+ UI Icons - Dev Chauhan" />
+  <meta name="description"
+    content="Why I built Reicon: an open-source library of 2,700+ UI SVG icons designed on a strict 24x24 grid, tree-shaken across 7 frameworks, and equipped with native MCP for AI agents." />
+  <meta name="keywords"
+    content="Reicon, SVG icons, open source icons, icon library, React icons, Vue icons, Svelte icons, Flutter icons, MCP, AI agents, icon design, Dev Chauhan" />
+  <meta name="author" content="Dev Chauhan" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <link rel="canonical" href="https://devchauhan.in/writing/reicon" />
+
+  <link rel="icon" href="/assets/favicon/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon/favicon-48x48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="alternate" type="application/rss+xml" title="Dev Chauhan — Writing"
+    href="https://devchauhan.in/feed.xml" />
+
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="color-scheme" content="light" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://devchauhan.in/writing/reicon" />
+  <meta property="og:title" content="Building Reicon - 2,700+ UI Icons" />
+  <meta property="og:description"
+    content="Why I built Reicon: 2,700+ UI SVG icons on a strict 24x24 grid, tree-shaken across 7 frameworks, and built with native MCP for AI agents." />
+  <meta property="og:image" content="https://devchauhan.in/assets/og/reicon.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Dev Chauhan" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image:alt" content="Building Reicon - SVG Icon Library" />
+  <meta property="article:published_time" content="2026-07-29T00:00:00Z" />
+  <meta property="article:author" content="Dev Chauhan" />
+  <meta property="article:tag" content="open source" />
+  <meta property="article:tag" content="SVG" />
+  <meta property="article:tag" content="icons" />
+  <meta property="article:tag" content="React" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@devchauhann3" />
+  <meta name="twitter:creator" content="@devchauhann3" />
+  <meta name="twitter:url" content="https://devchauhan.in/writing/reicon" />
+  <meta name="twitter:title" content="Building Reicon - 2,700+ UI Icons" />
+  <meta name="twitter:description"
+    content="Why I built Reicon: 2,700+ UI SVG icons on a strict 24x24 grid, tree-shaken across 7 frameworks, and built with native MCP for AI agents." />
+  <meta name="twitter:image" content="https://devchauhan.in/assets/og/reicon.png" />
+  <meta name="twitter:image:alt" content="Building Reicon — SVG icon library" />
+
+  <link rel="preload" href="/assets/font/figtree-latin.woff2" as="font" type="font/woff2" crossorigin />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Building Reicon - 2,700+ UI Icons",
+      "description": "How I built Reicon, an open-source visual icon library featuring 2,700+ handcrafted UI SVG icons.",
+      "image": "https://devchauhan.in/assets/og/reicon.png",
+      "author": {
+        "@type": "Person",
+        "@id": "https://devchauhan.in/#person",
+        "name": "Dev Chauhan",
+        "url": "https://devchauhan.in",
+        "sameAs": [
+          "https://github.com/dqev",
+          "https://x.com/devchauhann3",
+          "https://linkedin.com/in/devchauhann3"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "@id": "https://devchauhan.in/#person",
+        "name": "Dev Chauhan",
+        "url": "https://devchauhan.in"
+      },
+      "datePublished": "2026-07-29",
+      "dateModified": "2026-07-29",
+      "inLanguage": "en",
+      "articleSection": "Writing",
+      "timeRequired": "PT5M",
+      "isPartOf": { "@id": "https://devchauhan.in/#website" },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://devchauhan.in/writing/reicon"
+      },
+      "keywords": ["open source", "SVG", "icons", "React", "Vue", "Svelte", "Flutter", "MCP", "Reicon"]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Dev Chauhan",
+          "item": "https://devchauhan.in"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Reicon",
+          "item": "https://devchauhan.in/writing/reicon"
+        }
+      ]
+    }
+  </script>
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Reicon completely free for commercial use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Reicon is licensed under the MIT license, meaning you can use, bundle, and modify it in commercial web apps, SaaS dashboards, mobile apps, and design systems with zero royalties."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the MCP server work with AI tools?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The reicon-mcp package runs locally through NPX. When configured in tools like Cursor, Claude Code, or Antigravity, the AI assistant calls MCP endpoints to retrieve exact icon names, SVG code, and JSX components without hallucinating non-existent glyphs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I request new icons or contribute?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The entire build pipeline is open on GitHub at dqev/reicon. You can submit SVG paths via issues or pull requests to be validated and compiled into all seven package distributions."
+          }
+        }
+      ]
+    }
+  </script>
+
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/writing/article.css" />
+
+  <style>
+    .icon-preview-box {
+      background: var(--color-raised);
+      border-radius: var(--radius-panel);
+      padding: var(--pad-panel);
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-row);
+    }
+
+    .style-switcher {
+      display: flex;
+      gap: var(--space-1);
+      background: var(--color-surface);
+      padding: var(--space-1);
+      border-radius: var(--radius-pill);
+      width: fit-content;
+      margin: 0 auto;
+    }
+
+    .style-pill {
+      background: transparent;
+      padding: var(--space-3) var(--space-7);
+      border-radius: var(--radius-pill);
+      font-size: var(--text-xs);
+      font-weight: 500;
+      color: var(--color-muted);
+      cursor: pointer;
+      transition: background 0.15s ease, color 0.15s ease;
+      line-height: var(--leading-none);
+    }
+
+    .style-pill.active {
+      background: var(--color-raised);
+      color: var(--color-ink);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    }
+
+    .icon-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: var(--space-6) var(--space-4);
+    }
+
+    .icon-slot {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--gap-list);
+      color: var(--color-ink);
+      min-width: 60px;
+    }
+
+    .icon-glyph {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+    }
+
+    .icon-glyph svg,
+    .icon-slot svg {
+      width: 28px;
+      height: 28px;
+      transition: transform 0.15s ease;
+      display: block;
+    }
+
+    .icon-slot:hover svg {
+      transform: scale(1.12);
+    }
+
+    .icon-slot span {
+      font-size: var(--text-xs);
+      color: var(--color-muted);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: var(--leading-snug);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header class="card card-nav">
+      <a href="/" class="btn-back">
+        <svg class="btn-back-arrow" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 13L5 8L10 3" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span>Home</span>
+      </a>
+      <span class="nav-tag">29/07/2026</span>
+    </header>
+
+    <section class="card card-header">
+      <h1 class="article-title">Building Reicon - 2,700+ UI Icons</h1>
+      <div class="article-meta">
+        <time datetime="2026-07-29">July 29, 2026</time>
+        <span class="meta-dot">·</span>
+        <span>5 min read</span>
+        <span class="meta-dot">·</span>
+        <span>by Dev Chauhan</span>
+      </div>
+    </section>
+
+    <article class="card card-content blog-content">
+      <img src="/assets/og/reicon.png" alt="Reicon - Free Open-Source SVG Icon Library" class="article-cover"
+        width="1200" height="630" />
+
+      <p>
+        Every frontend developer hits the same wall when building a real product: you pick an icon library, you design the first three screens, and then you need a specific icon for a filter drawer or export menu. The library does not have it.
+      </p>
+      <p>
+        So you hunt across a second library. Now your dashboard has two different stroke weights, mismatched corner radii, and inconsistent optical centers. It feels patched together.
+      </p>
+      <p>
+        I built <a href="https://reicon.dev" target="_blank" rel="noopener noreferrer">Reicon</a> to solve that once and for all: a clean, unified open-source icon system of <strong>2,700+ UI SVG icons</strong> built on a disciplined 24x24 grid, distributed across 7 frameworks, and equipped with native MCP support so AI agents can query and use them without hallucinating paths.
+      </p>
+
+      <h2>The Three Core Rules</h2>
+      <p>
+        To keep a library of 2,700+ icons coherent across every category, every single glyph adheres to three non-negotiable rules:
+      </p>
+      <ol>
+        <li><strong>Strict 24x24 grid discipline.</strong> Every path sits within a 24x24 pixel boundary. Outlines use a precise 1.5px stroke with round terminals. Padding and optical weights are calibrated so a battery icon and an arrow share the exact same visual presence.</li>
+        <li><strong>Zero runtime bloat.</strong> Each icon is exported as an independent, tree-shakable component. Importing one icon adds only that single SVG to your bundle - no shared runtime overhead, no massive index files.</li>
+        <li><strong>Three unified style variations.</strong> Every icon is available in Outline, Filled, and Duotone so you never have to mix-and-match from different sources when your UI changes state.</li>
+      </ol>
+
+      <h2>Interactive Style Preview</h2>
+      <p>
+        Switch styles below to see how the geometry translates between outline, solid fill, and dual-opacity duotone:
+      </p>
+
+      <div class="icon-preview-box">
+        <div class="style-switcher">
+          <button type="button" class="style-pill active" data-style="outline">Outline</button>
+          <button type="button" class="style-pill" data-style="filled">Filled</button>
+          <button type="button" class="style-pill" data-style="duotone">Duotone</button>
+        </div>
+
+        <div class="icon-row" id="reicon-slots">
+          <div class="icon-slot">
+            <div id="slot-prism" class="icon-glyph"></div>
+            <span>Prism</span>
+          </div>
+          <div class="icon-slot">
+            <div id="slot-crystal" class="icon-glyph"></div>
+            <span>Crystal</span>
+          </div>
+          <div class="icon-slot">
+            <div id="slot-ripple" class="icon-glyph"></div>
+            <span>Ripple</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison" role="group" aria-label="Reicon specifications">
+        <div class="comparison-row"><strong>Icon Count</strong><span>2,700+ icons</span></div>
+        <div class="comparison-row"><strong>Styles</strong><span>Outline, Filled, Duotone</span></div>
+        <div class="comparison-row"><strong>Base Canvas</strong><span>24×24 viewBox, 1.5px stroke</span></div>
+        <div class="comparison-row"><strong>Frameworks</strong><span>React, Vue 3, Svelte, Flutter</span></div>
+        <div class="comparison-row"><strong>AI Integration</strong><span>Native MCP Server (reicon-mcp)</span></div>
+        <div class="comparison-row"><strong>License</strong><span>MIT (Free commercial use)</span></div>
+      </div>
+
+      <h2>One Dataset, Seven Package Ecosystems</h2>
+      <p>
+        Managing thousands of SVG icons manually across multiple frameworks is unsustainable. Reicon uses a single compiler pipeline driven by a structured dataset at <code>data/icon-data.json</code>.
+      </p>
+      <p>
+        When a new icon is added, the build script validates its stroke width and viewBox, runs SVG path compression, and compiles it into:
+      </p>
+      <ul>
+        <li><strong>reicon-react</strong>: React components with full TypeScript support and ref forwarding.</li>
+        <li><strong>reicon-vue</strong>: Vue 3 single-file component tree with props for size, color, and weight.</li>
+        <li><strong>reicon-svelte</strong>: Svelte 4 and 5 compatible components.</li>
+        <li><strong>reicon_flutter</strong>: Native Flutter SVG widgets for mobile development.</li>
+        <li><strong>reicon-figma</strong>: A dedicated Figma plugin for direct drag-and-drop design workflows.</li>
+        <li><strong>reicon-vscode</strong>: VS Code extension displaying inline icon previews next to import statements.</li>
+        <li><strong>reicon-mcp</strong>: Model Context Protocol server enabling AI agents to search and inspect icons programmatically.</li>
+      </ul>
+
+      <h2>Built for the AI Agent Era</h2>
+      <p>
+        AI coding assistants (Cursor, Claude Code, Antigravity) are rewriting how software gets built. But icons remain a major friction point: models frequently hallucinate icon names that do not exist, or generate distorted inline SVGs with incorrect viewBox coordinates.
+      </p>
+      <p>
+        Reicon solves this directly with <strong>reicon-mcp</strong>, a native Model Context Protocol server:
+      </p>
+      <pre><code>{
+  "mcpServers": {
+    "reicon": {
+      "command": "npx",
+      "args": ["reicon-mcp"]
+    }
+  }
+}</code></pre>
+      <p>
+        With this configuration, your AI agent can query the entire Reicon catalog, retrieve exact component names, inspect viewBox dimensions, and drop verified icons directly into your code.
+      </p>
+      <p>
+        For lightweight agent workflows, Reicon also serves plain-text documentation endpoints at <code>reicon.dev/llms.txt</code> and <code>reicon.dev/llms-full.txt</code>.
+      </p>
+
+      <h2>Quick Start</h2>
+      <p>Install the React package with your favorite package manager:</p>
+      <pre><code>npm install reicon-react</code></pre>
+      <p>Import any icon directly as an individual, tree-shaken component:</p>
+      <pre><code>import { Prism, Crystal, Ripple } from 'reicon-react';
+
+export default function Dashboard() {
+  return (
+    &lt;div style={{ display: 'flex', gap: 12 }}&gt;
+      &lt;Prism size={20} weight="Outline" color="#000000" /&gt;
+      &lt;Crystal size={20} weight="Filled" color="#000000" /&gt;
+      &lt;Ripple size={20} weight="Duotone" color="#000000" /&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+
+      <p>Or use the zero-install CDN runtime with a custom Web Component:</p>
+      <pre><code>&lt;script src="https://unpkg.com/reicon/cdn/reicon.js"&gt;&lt;/script&gt;
+
+&lt;re-icon icon="prism" weight="outline" size="24"&gt;&lt;/re-icon&gt;</code></pre>
+
+      <h2>Open Source &amp; Credits</h2>
+      <p>
+        Reicon is 100% open-source under the MIT license. You can use it in personal projects, client work, commercial SaaS platforms, and digital products without restrictions.
+      </p>
+      <p>
+        The base geometry builds upon foundational elements from Solar Icons (designed by 480 Design, CC BY 4.0, package maintained by Saoudi H. under MIT) and Zappicon. The entire compiler pipeline, framework wrappers, MCP server, and documentation site are available on <a href="https://github.com/dqev/reicon" target="_blank" rel="noopener noreferrer">GitHub</a>.
+      </p>
+      <p>
+        Explore the complete searchable catalog of 2,700+ icons with one-click SVG and JSX copying at <a href="https://reicon.dev" target="_blank" rel="noopener noreferrer">reicon.dev</a>.
+      </p>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq">
+        <details>
+          <summary>
+            <span>Is Reicon completely free for commercial use?</span>
+            <svg class="faq-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 3.5V12.5M3.5 8H12.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </summary>
+          <p>Yes. Reicon is licensed under the MIT license, meaning you can use, bundle, and modify it in commercial web apps, SaaS dashboards, mobile apps, and design systems with zero royalties.</p>
+        </details>
+        <details>
+          <summary>
+            <span>How does the MCP server work with AI tools?</span>
+            <svg class="faq-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 3.5V12.5M3.5 8H12.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </summary>
+          <p>The reicon-mcp package runs locally through NPX. When configured in tools like Cursor, Claude Code, or Antigravity, the AI assistant calls MCP endpoints to retrieve exact icon names, SVG code, and JSX components without hallucinating non-existent glyphs.</p>
+        </details>
+        <details>
+          <summary>
+            <span>Can I request new icons or contribute?</span>
+            <svg class="faq-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 3.5V12.5M3.5 8H12.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </summary>
+          <p>Yes. The entire build pipeline is open on GitHub at dqev/reicon. You can submit SVG paths via issues or pull requests to be validated and compiled into all seven package distributions.</p>
+        </details>
+      </div>
+    </article>
+
+    <section class="card card-more">
+      <h2 class="col-title">More Writing</h2>
+      <ul class="writing-list">
+        <li class="writing-item">
+          <a href="/writing/curto">Curto Serif - The Free Open-Source Serif</a>
+          <span class="writing-date">20/10</span>
+        </li>
+        <li class="writing-item">
+          <a href="/writing/vibe-coded-designers">Vibe-Coded Designers</a>
+          <span class="writing-date">15/09</span>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="card card-footer">
+      <span>Dev Chauhan &copy; 2026</span>
+      <a href="/" class="footer-link">devchauhan.in</a>
+    </footer>
+  </main>
+
+  <script src="/writing/writing.js"></script>
+
+  <script>
+    (function () {
+      var defaultIcons = {
+        prism: {
+          weights: {
+            Outline: {
+              code: '<path d="M10 3.5L17.5 18.5H2.5L10 3.5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M1 11H6.25" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.75 11L20.5 7.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.75 11L21.5 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.75 11L20.5 14.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>'
+            },
+            Filled: {
+              code: '<path d="M10 3.5L17.5 18.5H2.5L10 3.5Z" fill="currentColor"/><path d="M1 11H6.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M13.75 11L20.5 7.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M13.75 11L21.5 11" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M13.75 11L20.5 14.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="none"/>'
+            },
+            Duotone: {
+              code: '<path d="M1 11H6.25M13.75 11L20.5 7.5M13.75 11L21.5 11M13.75 11L20.5 14.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path opacity="0.5" d="M10 3.5L17.5 18.5H2.5L10 3.5Z" fill="currentColor"/>'
+            }
+          }
+        },
+        crystal: {
+          weights: {
+            Outline: {
+              code: '<path d="M12 2.5L16.5 9L15.5 17L12 21.5L8.5 17L7.5 9L12 2.5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.5 9H16.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 2.5V9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>'
+            },
+            Filled: {
+              code: '<path d="M12 2.5L16.5 9L15.5 17L12 21.5L8.5 17L7.5 9L12 2.5Z" fill="currentColor"/>'
+            },
+            Duotone: {
+              code: '<path d="M7.5 9L8.5 17L12 21.5L15.5 17L16.5 9L7.5 9Z" fill="currentColor"/><path opacity="0.5" d="M12 2.5L16.5 9H7.5L12 2.5Z" fill="currentColor"/>'
+            }
+          }
+        },
+        ripple: {
+          weights: {
+            Outline: {
+              code: '<path d="M8 18C8 15.79 9.79 14 12 14C14.21 14 16 15.79 16 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.5 18C4.5 13.86 7.86 10.5 12 10.5C16.14 10.5 19.5 13.86 19.5 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.5 18C1.5 12.2 6.2 7.5 12 7.5C17.8 7.5 22.5 12.2 22.5 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 16.5C12.83 16.5 13.5 17.17 13.5 18C13.5 18.83 12.83 19.5 12 19.5C11.17 19.5 10.5 18.83 10.5 18C10.5 17.17 11.17 16.5 12 16.5Z" fill="currentColor"/>'
+            },
+            Filled: {
+              code: '<path d="M8 18C8 15.79 9.79 14 12 14C14.21 14 16 15.79 16 18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M4.5 18C4.5 13.86 7.86 10.5 12 10.5C16.14 10.5 19.5 13.86 19.5 18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M1.5 18C1.5 12.2 6.2 7.5 12 7.5C17.8 7.5 22.5 12.2 22.5 18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M12 16.5C12.83 16.5 13.5 17.17 13.5 18C13.5 18.83 12.83 19.5 12 19.5C11.17 19.5 10.5 18.83 10.5 18C10.5 17.17 11.17 16.5 12 16.5Z" fill="currentColor"/>'
+            },
+            Duotone: {
+              code: '<path d="M8 18C8 15.79 9.79 14 12 14C14.21 14 16 15.79 16 18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M12 16.5C12.83 16.5 13.5 17.17 13.5 18C13.5 18.83 12.83 19.5 12 19.5C11.17 19.5 10.5 18.83 10.5 18C10.5 17.17 11.17 16.5 12 16.5Z" fill="currentColor"/><path opacity="0.5" d="M4.5 18C4.5 13.86 7.86 10.5 12 10.5C16.14 10.5 19.5 13.86 19.5 18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path opacity="0.5" d="M1.5 18C1.5 12.2 6.2 7.5 12 7.5C17.8 7.5 22.5 12.2 22.5 18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="none"/>'
+            }
+          }
+        }
+      };
+
+      var activeIcons = defaultIcons;
+      var activeWeight = 'Outline';
+
+      function wrapSvg(inner) {
+        return '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">' + inner + '</svg>';
+      }
+
+      function renderIcons() {
+        var container = document.getElementById('reicon-slots');
+        if (!container) return;
+        container.innerHTML = '';
+
+        Object.keys(activeIcons).forEach(function (name) {
+          var item = activeIcons[name];
+          var weights = item.weights || item;
+          var w = weights[activeWeight] || weights['Outline'];
+          if (!w || !w.code) return;
+
+          var slot = document.createElement('div');
+          slot.className = 'icon-slot';
+
+          var glyph = document.createElement('div');
+          glyph.className = 'icon-glyph';
+          glyph.innerHTML = wrapSvg(w.code);
+
+          var label = document.createElement('span');
+          label.textContent = name.charAt(0).toUpperCase() + name.slice(1);
+
+          slot.appendChild(glyph);
+          slot.appendChild(label);
+          container.appendChild(slot);
+        });
+      }
+
+      function fetchIcons(url) {
+        fetch(url)
+          .then(function (res) {
+            if (!res.ok) throw new Error('Status ' + res.status);
+            return res.json();
+          })
+          .then(function (data) {
+            if (data && data.icons && Object.keys(data.icons).length > 0) {
+              activeIcons = data.icons;
+              renderIcons();
+            }
+          })
+          .catch(function () {});
+      }
+
+      fetchIcons('/assets/data/mock-icons.json');
+      fetchIcons('../../assets/data/mock-icons.json');
+
+      var pills = document.querySelectorAll('.style-pill');
+      pills.forEach(function (pill) {
+        pill.addEventListener('click', function () {
+          pills.forEach(function (p) { p.classList.remove('active'); });
+          pill.classList.add('active');
+          var s = pill.getAttribute('data-style');
+          activeWeight = s.charAt(0).toUpperCase() + s.slice(1);
+          renderIcons();
+        });
+      });
+
+      renderIcons();
+    })();
+  </script>
+</body>
+
+</html>

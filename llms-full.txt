@@ -1,0 +1,79 @@
+# Dev Chauhan - Full Technical & Profile Reference
+
+> Designer and developer building open-source tools for the web.
+
+Dev Chauhan is a designer and developer based in India studying Computer Science and Engineering (B.Tech). He builds high-performance web applications, UI design systems, SVG icon libraries, and developer tools using React, TypeScript, JavaScript, and Supabase.
+
+Last updated: 2026-10-22
+
+## Developer Profile
+
+- Name: Dev Chauhan
+- Role: Designer and developer
+- Location: India
+- Education: B.Tech student in Computer Science and Engineering
+- [Website](https://devchauhan.in)
+- [GitHub](https://github.com/dqev)
+- [X / Twitter](https://x.com/devchauhann3)
+- [LinkedIn](https://linkedin.com/in/devchauhann3)
+- [Email](mailto:dev@devchauhan.in)
+
+## Technical Stack
+
+- Frontend: React, TypeScript, JavaScript, HTML5, CSS3, Vite
+- Backend and database: Node.js, Supabase (PostgreSQL, Auth, RLS)
+- UI and graphics: SVG systems, WebGL, Canvas API
+- Tools and hosting: Git, GitHub, Vercel, Figma
+
+## Projects
+
+### Reicon
+
+Open-source visual asset library with 3,900+ handcrafted UI SVG icons across 3 styles (Outlined, Solid, Duotone), 4,900+ verified brand logos, and 71,000+ vector illustrations. Available as component packages for React, Vue, Svelte, and Flutter, plus an MCP (Model Context Protocol) server for AI coding assistants. MIT licensed, tree-shakeable, and zero dependencies.
+
+- [Website](https://reicon.dev)
+- [Repository](https://github.com/dqev/reicon)
+- Stack: React, TypeScript, SVG, Node.js
+
+### TopFree
+
+Free and fair product launch board for indie makers. Ranked entirely by real community votes, with zero paid boosts and no cost to submit.
+
+- [Website](https://topfree.lol)
+- Stack: React, TypeScript, Supabase, Vite
+
+### Curto Serif
+
+Free, open-source variable serif for editorial headlines and brand identities. Features weights 400–700, true italics, 376 glyphs, 86-language support, and the SIL Open Font License 1.1.
+
+- [Website](https://devchauhan.in/curto)
+- [Download 1.001](https://devchauhan.in/curto/CurtoSerif-1.001.zip)
+- [Repository](https://github.com/dqev/curto)
+
+## Writing
+
+The `/writing` index has been retired. The following articles are published at individual URLs.
+
+### [Curto Serif: The Free Open-Source Serif for 2026](https://devchauhan.in/writing/curto)
+
+Published 2026-10-20. Covers what makes a strong display serif in 2026, Curto Serif's 400–700 weight axis, 376 glyphs, 86-language support and true italics, plus the specimen-first approach to earning more search impressions. Includes live type controls and a practical guide to shipping the font in a real project.
+
+### [Will society accept me as a designer (vibe-coded) if I don't have a vibe-coded component library?](https://devchauhan.in/writing/vibe-coded-designers)
+
+Published 2026-09-15. A personal reflection on the rise of vibe-coded component libraries, X timeline culture, design authorship versus reskinning open-source forks, the anatomy of paid UI kits, and what actually defines a designer in the age of AI.
+
+### [Building Reicon - 2,700+ UI Icons](https://devchauhan.in/writing/reicon)
+
+Published 2026-07-29. How Reicon was built around a strict 24×24 grid, three core icon-design rules, one dataset distributed across seven framework packages, and native MCP support for AI agents. The article covers the design system, package architecture, and quick-start workflow. The article reflects Reicon at publication; the library has since grown to 3,900+ icons.
+
+## Portfolio Site
+
+- [Home](https://devchauhan.in)
+- [Curto Serif](https://devchauhan.in/curto)
+- [Sitemap](https://devchauhan.in/sitemap.xml)
+- [RSS feed](https://devchauhan.in/feed.xml)
+- [LLM summary](https://devchauhan.in/llms.txt)
+- [Full reference](https://devchauhan.in/llms-full.txt)
+- [AI reference](https://devchauhan.in/ai.txt)
+
+The portfolio is a static site built with semantic HTML, modern CSS, and vanilla JavaScript. It uses a self-hosted variable Figtree subset for interface text and self-hosted Curto Serif for editorial display type. The homepage links to Reicon, TopFree, Curto Serif, social profiles, and the three published articles. Curto also has a dedicated product page at https://devchauhan.in/curto with a live weight specimen, download, license, and source links.

@@ -1,0 +1,67 @@
+# Dev Chauhan
+
+> Designer and developer building open-source tools for the web.
+
+Dev Chauhan is a designer and developer based in India studying Computer Science and Engineering (B.Tech). He builds high-performance web applications, icon systems, and developer tools using React, TypeScript, JavaScript, and Supabase.
+
+Last updated: 2026-10-22
+
+## Profile & Contact
+
+- Name: Dev Chauhan
+- Role: Designer and developer
+- Location: India
+- Education: B.Tech student in Computer Science and Engineering
+- [Website](https://devchauhan.in)
+- [GitHub](https://github.com/dqev)
+- [X / Twitter](https://x.com/devchauhann3)
+- [LinkedIn](https://linkedin.com/in/devchauhann3)
+- [Email](mailto:dev@devchauhan.in)
+
+## Projects
+
+### Reicon
+
+Open-source visual asset library with 3,900+ UI SVG icons across 3 styles, 4,900+ brand logos, and 71,000+ vector illustrations. Available for React, Vue, Svelte, and Flutter, with an MCP server for AI coding agents. MIT licensed, tree-shakeable, and zero dependencies.
+
+- [Website](https://reicon.dev)
+- [Repository](https://github.com/dqev/reicon)
+
+### TopFree
+
+Free and fair product launch board for indie makers. Ranked entirely by real community votes, with zero paid boosts and no cost to submit.
+
+- [Website](https://topfree.lol)
+
+### Curto Serif
+
+Free, open-source variable serif for editorial headlines and brand identities. Weights 400–700, true italics, 376 glyphs, 86-language support, and licensed under the SIL Open Font License 1.1.
+
+- [Website](https://devchauhan.in/curto)
+- [Download 1.001](https://devchauhan.in/curto/CurtoSerif-1.001.zip)
+- [Repository](https://github.com/dqev/curto)
+
+## Writing
+
+The `/writing` index is retired. Articles are published at individual URLs.
+
+### [Curto Serif: The Free Open-Source Serif for 2026](https://devchauhan.in/writing/curto)
+
+Why Curto Serif is a strong free serif choice for 2026, what makes a display serif work, and how a specimen-first page can earn more search impressions. Published 2026-10-20.
+
+### [Will society accept me as a designer (vibe-coded) if I don't have a vibe-coded component library?](https://devchauhan.in/writing/vibe-coded-designers)
+
+A personal reflection on vibe-coded component libraries, X timeline culture, design authorship, and what defines a designer in the AI era. Published 2026-09-15.
+
+### [Building Reicon - 2,700+ UI Icons](https://devchauhan.in/writing/reicon)
+
+How Reicon was built: handcrafted UI icons on a strict 24×24 grid, distributed across seven framework packages, with native MCP support for AI agents. Published 2026-07-29.
+
+## Site
+
+- [Portfolio](https://devchauhan.in)
+- [Sitemap](https://devchauhan.in/sitemap.xml)
+- [RSS feed](https://devchauhan.in/feed.xml)
+- [LLM summary](https://devchauhan.in/llms.txt)
+- [Full reference](https://devchauhan.in/llms-full.txt)
+- [AI reference](https://devchauhan.in/ai.txt)

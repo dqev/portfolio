@@ -1,0 +1,81 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-10-21T17:30:18.976Z",
+  "weights": [
+    "Outline",
+    "Filled",
+    "Duotone"
+  ],
+  "count": 3,
+  "icons": {
+    "prism": {
+      "description": [
+        "prism",
+        "light",
+        "beam",
+        "refraction",
+        "spectrum",
+        "triangle",
+        "glass"
+      ],
+      "category": "newicons",
+      "weights": {
+        "Outline": {
+          "code": "<path d=\"M10 3.5L17.5 18.5H2.5L10 3.5Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M1 11H6.25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M13.75 11L20.5 7.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M13.75 11L21.5 11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M13.75 11L20.5 14.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>"
+        },
+        "Filled": {
+          "code": "<path d=\"M10 3.5L17.5 18.5H2.5L10 3.5Z\" fill=\"currentColor\"/><path d=\"M1 11H6.25\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><path d=\"M13.75 11L20.5 7.5\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><path d=\"M13.75 11L21.5 11\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><path d=\"M13.75 11L20.5 14.5\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/>"
+        },
+        "Duotone": {
+          "code": "<path d=\"M1 11H6.25M13.75 11L20.5 7.5M13.75 11L21.5 11M13.75 11L20.5 14.5\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><path opacity=\"0.5\" d=\"M10 3.5L17.5 18.5H2.5L10 3.5Z\" fill=\"currentColor\"/>"
+        }
+      }
+    },
+    "crystal": {
+      "description": [
+        "crystal",
+        "gem",
+        "quartz",
+        "mineral",
+        "shard",
+        "facet",
+        "diamond"
+      ],
+      "category": "newicons",
+      "weights": {
+        "Outline": {
+          "code": "<path d=\"M12 2.5L16.5 9L15.5 17L12 21.5L8.5 17L7.5 9L12 2.5Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M7.5 9H16.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M12 2.5V9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>"
+        },
+        "Filled": {
+          "code": "<path d=\"M12 2.5L16.5 9L15.5 17L12 21.5L8.5 17L7.5 9L12 2.5Z\" fill=\"currentColor\"/>"
+        },
+        "Duotone": {
+          "code": "<path d=\"M7.5 9L8.5 17L12 21.5L15.5 17L16.5 9L7.5 9Z\" fill=\"currentColor\"/><path opacity=\"0.5\" d=\"M12 2.5L16.5 9H7.5L12 2.5Z\" fill=\"currentColor\"/>"
+        }
+      }
+    },
+    "ripple": {
+      "description": [
+        "ripple",
+        "water",
+        "concentric",
+        "wave",
+        "radar",
+        "pulse",
+        "circle"
+      ],
+      "category": "newicons",
+      "weights": {
+        "Outline": {
+          "code": "<path d=\"M8 18C8 15.79 9.79 14 12 14C14.21 14 16 15.79 16 18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M4.5 18C4.5 13.86 7.86 10.5 12 10.5C16.14 10.5 19.5 13.86 19.5 18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M1.5 18C1.5 12.2 6.2 7.5 12 7.5C17.8 7.5 22.5 12.2 22.5 18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M12 16.5C12.83 16.5 13.5 17.17 13.5 18C13.5 18.83 12.83 19.5 12 19.5C11.17 19.5 10.5 18.83 10.5 18C10.5 17.17 11.17 16.5 12 16.5Z\" fill=\"currentColor\"/>"
+        },
+        "Filled": {
+          "code": "<path d=\"M8 18C8 15.79 9.79 14 12 14C14.21 14 16 15.79 16 18\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><path d=\"M4.5 18C4.5 13.86 7.86 10.5 12 10.5C16.14 10.5 19.5 13.86 19.5 18\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><path d=\"M1.5 18C1.5 12.2 6.2 7.5 12 7.5C17.8 7.5 22.5 12.2 22.5 18\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><path d=\"M12 16.5C12.83 16.5 13.5 17.17 13.5 18C13.5 18.83 12.83 19.5 12 19.5C11.17 19.5 10.5 18.83 10.5 18C10.5 17.17 11.17 16.5 12 16.5Z\" fill=\"currentColor\"/>"
+        },
+        "Duotone": {
+          "code": "<path d=\"M8 18C8 15.79 9.79 14 12 14C14.21 14 16 15.79 16 18\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><path d=\"M12 16.5C12.83 16.5 13.5 17.17 13.5 18C13.5 18.83 12.83 19.5 12 19.5C11.17 19.5 10.5 18.83 10.5 18C10.5 17.17 11.17 16.5 12 16.5Z\" fill=\"currentColor\"/><path opacity=\"0.5\" d=\"M4.5 18C4.5 13.86 7.86 10.5 12 10.5C16.14 10.5 19.5 13.86 19.5 18\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><path opacity=\"0.5\" d=\"M1.5 18C1.5 12.2 6.2 7.5 12 7.5C17.8 7.5 22.5 12.2 22.5 18\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/>"
+        }
+      }
+    }
+  }
+}

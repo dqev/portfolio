@@ -1,0 +1,412 @@
+@font-face {
+  font-family: "Curto Serif";
+  src: url("/assets/webfonts/CurtoSerif-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Curto Serif";
+  src: url("/assets/webfonts/CurtoSerif-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Curto Serif Variable";
+  src: url("/assets/webfonts-beta/CurtoSerif%5Bwght%5D.woff2") format("woff2-variations");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Curto Serif Variable";
+  src: url("/assets/webfonts-beta/CurtoSerif-Italic%5Bwght%5D.woff2") format("woff2-variations");
+  font-weight: 400 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --bg: #1a1a1a;
+  --text: #f4f4f4;
+  --accent: #81acec;
+  --accent-ink: #101418;
+  --wrap: 1180px;
+  --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100svh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: -0.01px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+  cursor: url("/curto/cursor-16.png") 0 0, auto;
+}
+
+main {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+::selection { background: var(--accent); color: var(--accent-ink); }
+
+a { color: inherit; }
+
+.wrap {
+  width: 100%;
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding-top: clamp(32px, 9svh, 96px);
+  padding-bottom: clamp(20px, 5svh, 48px);
+}
+
+.hero-stage {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  margin: 0;
+  font-family: "Curto Serif Variable", "Curto Serif", Georgia, serif;
+  font-weight: var(--hero-weight, 400);
+  font-size: clamp(64px, 14vw, 188px);
+  line-height: var(--hero-leading, .88);
+  letter-spacing: var(--hero-tracking, 0em);
+  max-width: 100%;
+  min-width: 8ch;
+  overflow-wrap: anywhere;
+  cursor: url("/curto/text-cursor.png") 8 8, text;
+  caret-color: var(--accent);
+  outline: none;
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+.hero-title:focus-visible {
+  outline: none;
+}
+
+.hero-title::after {
+  content: "|";
+  display: inline-block;
+  margin-left: .02em;
+  color: var(--accent);
+  animation: caret-blink 1.05s steps(1, end) infinite;
+  pointer-events: none;
+}
+
+.hero-title:hover::after,
+.hero-title:focus::after {
+  opacity: 0;
+  animation: none;
+}
+
+.hero-title.is-empty::before {
+  content: "Curto Serif.";
+  color: rgba(244, 244, 244, 0.18);
+}
+
+@keyframes caret-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.hero-title em { font-style: italic; }
+
+.hero-title .dot { color: var(--accent); }
+
+.hero-controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: clamp(18px, 3svh, 28px);
+}
+
+.els-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 9px 0 0;
+  font-size: 11.5px;
+  line-height: 1.4;
+  color: rgba(237, 237, 237, 0.55);
+  letter-spacing: 0.01em;
+}
+
+.els-hint svg {
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.els-container {
+  width: 100%;
+  max-width: 260px;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.els-track {
+  position: relative;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  cursor: url("/curto/grab-cursor.png") 8 8, grab;
+  touch-action: none;
+  user-select: none;
+  outline: none;
+}
+
+.els-track.els-active {
+  cursor: url("/curto/grab-cursor.png") 8 8, grabbing;
+}
+
+.els-track:focus-visible {
+  box-shadow: 0 0 0 2px rgba(129, 173, 236, 0.45);
+}
+
+.els-fill {
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  background: var(--accent);
+  border-radius: 14px;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0.18;
+}
+
+.els-track.els-active .els-fill {
+  opacity: 0.28;
+}
+
+.els-label {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  font-size: 0.78rem;
+  font-weight: 500;
+  font-family: var(--sans);
+  color: rgba(237, 237, 237, 0.55);
+  pointer-events: none;
+  opacity: 0.8;
+  transition: opacity 0.15s cubic-bezier(.19, 1, .22, 1);
+}
+
+.els-value {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: var(--sans);
+  color: rgba(237, 237, 237, 0.55);
+  pointer-events: none;
+  opacity: 0.8;
+  font-variant-numeric: tabular-nums;
+  transition: color 0.15s cubic-bezier(.19, 1, .22, 1);
+}
+
+.els-track.els-active .els-value {
+  opacity: 1;
+  color: var(--text);
+}
+
+.els-hash-marks {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.els-hash {
+  position: absolute;
+  top: 50%;
+  width: 1px;
+  height: 10px;
+  background: rgba(244, 244, 244, 0.7);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s cubic-bezier(.19, 1, .22, 1);
+}
+
+.els-track.els-active .els-hash {
+  opacity: 0.2;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: clamp(18px, 4svh, 32px);
+}
+
+.hero-story {
+  margin: 16px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(237, 237, 237, 0.42);
+}
+
+.hero-story a {
+  text-decoration: none;
+  transition: color 180ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero-story a:hover {
+  color: rgba(237, 237, 237, 0.78);
+}
+
+.primary,
+.secondary,
+.accent,
+.github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 50px;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 200ms cubic-bezier(0.22, 1, 0.36, 1),
+              color 200ms cubic-bezier(0.22, 1, 0.36, 1),
+              transform 150ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.primary:active,
+.secondary:active,
+.accent:active,
+.github:active {
+  transform: translateY(1px);
+}
+
+.primary {
+  background: #2a2a2a;
+  color: #ffffff;
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.04),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.06),
+    inset 0 -1px 0 0 rgba(0, 0, 0, 0.06),
+    inset 0 0 0 1px rgba(196, 196, 196, 0.1);
+}
+
+.primary:hover { background: #323232; }
+
+.secondary {
+  background: #81ADEC;
+  color: #0a0a0a;
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.35),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.secondary:hover { background: #9dc0f2; }
+
+.accent {
+  background: rgba(129, 173, 236, 0.16);
+  color: #81ADEC;
+}
+
+.accent:hover { background: rgba(129, 173, 236, 0.24); }
+
+.github {
+  background: rgba(255, 255, 255, 0.07);
+  color: rgba(237, 237, 237, 0.6);
+  padding: 0 14px;
+}
+
+.github:hover {
+  background: rgba(255, 255, 255, 0.10);
+  color: #ededed;
+}
+
+.github svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.secondary svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+
+@media (max-width: 680px) {
+  .wrap { padding-left: 18px; padding-right: 18px; }
+  .hero {
+    padding-top: clamp(24px, 6svh, 48px);
+    padding-bottom: clamp(18px, 4svh, 32px);
+  }
+  .hero-title { font-size: clamp(58px, 19vw, 128px); --hero-leading: .9; }
+  .hero-controls { margin-top: clamp(16px, 2.5svh, 24px); }
+  .hero-actions { margin-top: clamp(16px, 3svh, 24px); }
+}
+
+@media (max-width: 680px) and (max-height: 640px) {
+  .hero { padding-top: 18px; padding-bottom: 16px; }
+  .hero-title { font-size: clamp(48px, 16vw, 92px); }
+  .hero-controls { margin-top: 14px; }
+  .hero-actions { margin-top: 12px; }
+  .els-track { height: 34px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+  .hero-title::after { animation: none; opacity: 1; }
+}

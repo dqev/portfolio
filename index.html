@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Chauhan — Design and code for the web</title>
+  <meta name="description"
+    content="Design and code for the web. I build helpful open-source tools in my free time." />
+  <meta name="keywords"
+    content="Dev Chauhan, designer, developer, open source, Reicon, TopFree, Curto Serif, India" />
+  <meta name="author" content="Dev Chauhan" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="color-scheme" content="light" />
+  <link rel="canonical" href="https://devchauhan.in" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://devchauhan.in/#person",
+          "name": "Dev Chauhan",
+          "url": "https://devchauhan.in",
+          "jobTitle": "Designer and developer",
+          "description": "Designer and developer from India building helpful open-source tools for the web.",
+          "email": "mailto:dev@devchauhan.in",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IN"
+          },
+          "knowsAbout": [
+            "Web design",
+            "Interface engineering",
+            "Backend development",
+            "Open-source software",
+            "SVG icon systems",
+            "Typography",
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "Supabase"
+          ],
+          "sameAs": [
+            "https://github.com/dqev",
+            "https://x.com/devchauhann3",
+            "https://linkedin.com/in/devchauhann3"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://devchauhan.in/#website",
+          "url": "https://devchauhan.in",
+          "name": "Dev Chauhan",
+          "description": "Design and code for the web. Helpful open-source tools built in free time.",
+          "inLanguage": "en",
+          "publisher": {
+            "@id": "https://devchauhan.in/#person"
+          }
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://devchauhan.in/#webpage",
+          "url": "https://devchauhan.in",
+          "name": "Dev Chauhan — Design and code for the web",
+          "isPartOf": {
+            "@id": "https://devchauhan.in/#website"
+          },
+          "about": {
+            "@id": "https://devchauhan.in/#person"
+          },
+          "mainEntity": {
+            "@id": "https://devchauhan.in/#person"
+          },
+          "inLanguage": "en",
+          "dateModified": "2026-10-22"
+        }
+      ]
+    }
+  </script>
+
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="alternate" type="application/rss+xml" title="Dev Chauhan — Writing"
+    href="https://devchauhan.in/feed.xml" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://devchauhan.in" />
+  <meta property="og:site_name" content="Dev Chauhan" />
+  <meta property="og:title" content="Dev Chauhan — Design and code for the web" />
+  <meta property="og:description"
+    content="Design and code for the web. I build helpful open-source tools in my free time." />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://devchauhan.in/assets/og/home.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Dev Chauhan — design and code for the web" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://devchauhan.in" />
+  <meta name="twitter:site" content="@devchauhann3" />
+  <meta name="twitter:creator" content="@devchauhann3" />
+  <meta name="twitter:title" content="Dev Chauhan — Design and code for the web" />
+  <meta name="twitter:description"
+    content="Design and code for the web. I build helpful open-source tools in my free time." />
+  <meta name="twitter:image" content="https://devchauhan.in/assets/og/home.png" />
+  <meta name="twitter:image:alt" content="Dev Chauhan — design and code for the web" />
+
+  <link rel="icon" href="/assets/favicon/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon/favicon-48x48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+
+  <link rel="preload" href="/assets/font/figtree-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <style>
+    .card-name {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-11) var(--pad-card);
+      text-align: center;
+    }
+
+    .card-name h1 {
+      font-size: var(--text-2xl);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: var(--leading-display);
+      color: var(--color-ink);
+    }
+
+    .card-bio {
+      padding: var(--pad-card);
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-row);
+    }
+
+    .bio-text {
+      font-size: var(--text-base);
+      font-weight: 500;
+      line-height: var(--leading-snug);
+      color: var(--color-ink);
+      letter-spacing: -0.01em;
+    }
+
+    .bio-text a,
+    .bio-text .muted-link {
+      color: var(--color-muted);
+      transition: color 0.15s ease;
+    }
+
+    .bio-text a:hover,
+    .bio-text .muted-link:hover {
+      color: var(--color-ink);
+    }
+
+    .bio-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .card-grid {
+      padding: var(--pad-card);
+    }
+
+    .grid-columns {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--gap-row);
+    }
+
+    .grid-col {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-card);
+    }
+
+    .col-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-tight);
+    }
+
+    .col-list a,
+    .col-list span {
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: var(--color-muted);
+      letter-spacing: -0.01em;
+      line-height: var(--leading-snug);
+      transition: color 0.15s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .col-list a:hover {
+      color: var(--color-ink);
+    }
+
+    .card-writing {
+      flex: 1;
+      padding: var(--pad-card);
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-card);
+    }
+
+    .card-writing-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <section class="card card-name">
+      <h1>Dev Chauhan</h1>
+    </section>
+
+    <section class="card card-bio">
+      <p class="bio-text">
+        Design and code for the web. I maintain <a href="https://reicon.dev" target="_blank" rel="noopener noreferrer"
+          class="muted-link">Reicon</a> an Open-Source icon library helping designers and developers. Currently
+        pursuing a B.Tech in CSE.
+      </p>
+      <div class="bio-actions">
+        <a href="https://t.me/devchauhann3" target="_blank" rel="noopener noreferrer" class="btn btn-white">
+          <svg class="btn-icon" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            preserveAspectRatio="xMidYMid" aria-hidden="true">
+            <defs>
+              <linearGradient id="tg-grad" x1="50%" x2="50%" y1="0%" y2="100%">
+                <stop offset="0%" stop-color="#2aabee" />
+                <stop offset="100%" stop-color="#229ed9" />
+              </linearGradient>
+              <clipPath id="tg-clip">
+                <circle cx="128" cy="128" r="128" />
+              </clipPath>
+            </defs>
+            <path fill="url(#tg-grad)"
+              d="M128 0C94.06 0 61.48 13.494 37.5 37.49A128.04 128.04 0 0 0 0 128c0 33.934 13.5 66.514 37.5 90.51C61.48 242.506 94.06 256 128 256s66.52-13.494 90.5-37.49c24-23.996 37.5-56.576 37.5-90.51s-13.5-66.514-37.5-90.51C194.52 13.494 161.94 0 128 0" />
+            <g clip-path="url(#tg-clip)">
+              <path class="tg-plane" fill="#ffffff"
+                d="M57.94 126.648q55.98-24.385 74.64-32.152c35.56-14.786 42.94-17.354 47.76-17.441 1.06-.017 3.42.245 4.96 1.49 1.28 1.05 1.64 2.47 1.82 3.467.16.996.38 3.266.2 5.038-1.92 20.24-10.26 69.356-14.5 92.026-1.78 9.592-5.32 12.808-8.74 13.122-7.44.684-13.08-4.912-20.28-9.63-11.26-7.386-17.62-11.982-28.56-19.188-12.64-8.328-4.44-12.906 2.76-20.386 1.88-1.958 34.64-31.748 35.26-34.45.08-.338.16-1.598-.6-2.262-.74-.666-1.84-.438-2.64-.258-1.14.256-19.12 12.152-54 35.686-5.1 3.508-9.72 5.218-13.88 5.128-4.56-.098-13.36-2.584-19.9-4.708-8-2.606-14.38-3.984-13.82-8.41.28-2.304 3.46-4.662 9.52-7.072" />
+            </g>
+          </svg>
+          <span>Let's talk</span>
+        </a>
+        <a href="https://reicon.dev" target="_blank" rel="noopener noreferrer" class="btn btn-purple">
+          <span>Reicon</span>
+          <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="12"
+            width="12" aria-hidden="true">
+            <path fill="currentColor"
+              d="M7 5a1 1 0 1 0 0 2h7.586l-8.543 8.543a1 1 0 1 0 1.414 1.414L16 8.414V16a1 1 0 1 0 2 0V6q0-.12-.027-.231l-.016-.062a1 1 0 0 0-.122-.257 1 1 0 0 0-.36-.33l-.041-.02a1 1 0 0 0-.141-.057l-.062-.016-.034-.007-.006-.001-.088-.014Q17.053 5 17 5z" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="card card-time">
+      <div class="time-display" id="clock-display">00:00:00 AM / India</div>
+    </section>
+
+    <section class="card card-grid">
+      <div class="grid-columns">
+        <div class="grid-col">
+          <h2 class="col-title">Projects</h2>
+          <ul class="col-list">
+            <li><a href="https://reicon.dev" target="_blank" rel="noopener noreferrer">Reicon</a></li>
+            <li><a href="https://topfree.lol" target="_blank" rel="noopener noreferrer">TopFree</a></li>
+            <li><a href="/curto">Curto Serif</a></li>
+          </ul>
+        </div>
+
+        <div class="grid-col">
+          <h2 class="col-title">Socials</h2>
+          <ul class="col-list">
+            <li><a href="https://x.com/devchauhann3" target="_blank" rel="noopener noreferrer">X/Twitter</a></li>
+            <li><a href="https://github.com/dqev" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/devchauhann3" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li><a href="mailto:dev@devchauhan.in">Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card card-writing">
+      <div class="card-writing-header">
+        <h2 class="col-title">Writing</h2>
+      </div>
+      <ul class="writing-list">
+        <li class="writing-item">
+          <a href="/writing/curto">Curto Serif - The Free Open-Source Serif</a>
+          <span class="writing-date">20/10</span>
+        </li>
+        <li class="writing-item">
+          <a href="/writing/vibe-coded-designers">Vibe-Coded Designers</a>
+          <span class="writing-date">15/09</span>
+        </li>
+        <li class="writing-item">
+          <a href="/writing/reicon">Building Reicon - 2,700+ UI Icons</a>
+          <span class="writing-date">29/07</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    function updateClock() {
+      const clockEl = document.getElementById("clock-display");
+      if (!clockEl) return;
+      const now = new Date();
+      const timeStr = now.toLocaleTimeString("en-US", {
+        timeZone: "Asia/Kolkata",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: true
+      });
+      clockEl.textContent = `${timeStr} / India`;
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</body>
+
+</html>

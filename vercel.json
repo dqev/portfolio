@@ -1,0 +1,19 @@
+{
+  "framework": null,
+  "outputDirectory": ".",
+  "buildCommand": "",
+  "installCommand": "",
+  "rewrites": [
+    {
+      "source": "/curto",
+      "destination": "/curto/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/curto/license",
+      "destination": "https://github.com/dqev/curto/blob/main/OFL.txt",
+      "permanent": true
+    }
+  ]
+}

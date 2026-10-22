@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dev Chauhan — Writing</title>
+    <link>https://devchauhan.in</link>
+    <description>Essays on design, code, open-source tools, and building for the web.</description>
+    <language>en</language>
+    <lastBuildDate>2026-10-22T00:00:00+00:00</lastBuildDate>
+    <atom:link href="https://devchauhan.in/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Curto Serif: The Free Open-Source Serif for 2026</title>
+      <link>https://devchauhan.in/writing/curto</link>
+      <guid isPermaLink="true">https://devchauhan.in/writing/curto</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
+      <author>dev@devchauhan.in (Dev Chauhan)</author>
+      <description>Why Curto Serif is a strong free serif choice for 2026, what makes a display serif work, and how a specimen-first page can earn more search impressions.</description>
+    </item>
+    <item>
+      <title>Will society accept me as a designer (vibe-coded) if I don't have a vibe-coded component library?</title>
+      <link>https://devchauhan.in/writing/vibe-coded-designers</link>
+      <guid isPermaLink="true">https://devchauhan.in/writing/vibe-coded-designers</guid>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      <author>dev@devchauhan.in (Dev Chauhan)</author>
+      <description>A personal reflection on vibe-coded component libraries, X timeline culture, design authorship, and what defines a designer in the AI era.</description>
+    </item>
+    <item>
+      <title>Building Reicon - 2,700+ UI Icons</title>
+      <link>https://devchauhan.in/writing/reicon</link>
+      <guid isPermaLink="true">https://devchauhan.in/writing/reicon</guid>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+      <author>dev@devchauhan.in (Dev Chauhan)</author>
+      <description>How Reicon was built: handcrafted UI icons on a strict 24x24 grid, distributed across seven framework packages, with native MCP support for AI agents.</description>
+    </item>
+  </channel>
+</rss>

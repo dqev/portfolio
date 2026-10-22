@@ -1,0 +1,47 @@
+# Dev Chauhan - AI Reference
+
+Dev Chauhan is a designer and developer based in India studying Computer Science and Engineering (B.Tech). He builds web applications, UI design systems, SVG icon libraries, and developer tools using React, TypeScript, JavaScript, and Supabase.
+
+Last updated: 2026-10-22
+
+## Developer Info
+
+- Name: Dev Chauhan
+- Role: Designer and developer
+- Location: India
+- Education: B.Tech in Computer Science and Engineering
+- Website: https://devchauhan.in
+- GitHub: https://github.com/dqev
+- X / Twitter: https://x.com/devchauhann3
+- LinkedIn: https://linkedin.com/in/devchauhann3
+- Email: dev@devchauhan.in
+
+## Active Projects
+
+1. **Reicon** (https://reicon.dev)
+   - Open-source visual asset library with 3,900+ UI SVG icons across 3 styles, 4,900+ brand logos, and 71,000+ vector illustrations. Supports React, Vue, Svelte, Flutter, and MCP for AI coding agents.
+
+2. **TopFree** (https://topfree.lol)
+   - Free, fair product launch board for indie makers. Ranked entirely by real community votes with zero paid boosts and no cost to submit.
+
+3. **Curto Serif** (https://devchauhan.in/curto)
+   - Free, open-source variable serif with weights 400–700, true italics, 376 glyphs, 86-language support, and SIL Open Font License 1.1.
+   - Repository: https://github.com/dqev/curto
+
+## Site Structure
+
+- Portfolio: https://devchauhan.in
+- Curto Serif: https://devchauhan.in/curto
+- Sitemap: https://devchauhan.in/sitemap.xml
+- RSS Feed: https://devchauhan.in/feed.xml
+- LLM Summary: https://devchauhan.in/llms.txt
+- Full Text Reference: https://devchauhan.in/llms-full.txt
+- AI Reference: https://devchauhan.in/ai.txt
+
+The `/writing` index is retired. Articles are published at individual URLs.
+
+## Published Articles
+
+- Curto Serif: The Free Open-Source Serif for 2026: https://devchauhan.in/writing/curto
+- Will society accept me as a designer (vibe-coded) if I don't have a vibe-coded component library?: https://devchauhan.in/writing/vibe-coded-designers
+- Building Reicon - 2,700+ UI Icons: https://devchauhan.in/writing/reicon
