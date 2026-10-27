@@ -24,5 +24,16 @@
       "destination": "https://github.com/dqev/curto/blob/main/OFL.txt",
       "permanent": true
     }
+  ],
+  "headers": [
+    {
+      "source": "/assets/avatars/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
   ]
 }
