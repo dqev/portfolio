@@ -4,7 +4,7 @@
 
 Dev Chauhan is a designer and developer based in India studying Computer Science and Engineering (B.Tech). He builds high-performance web applications, icon systems, and developer tools using React, TypeScript, JavaScript, and Supabase.
 
-Last updated: 2026-10-22
+Last updated: 2026-10-27
 
 ## Profile & Contact
 
@@ -44,6 +44,10 @@ Free, open-source variable serif for editorial headlines and brand identities. W
 ## Writing
 
 The `/writing` index is retired. Articles are published at individual URLs.
+
+### [24 Designers and Design Engineers to Follow on X (2026)](https://devchauhan.in/writing/designers-to-follow-on-x)
+
+The best designers and design engineers to follow on X in 2026. A personal list of 24 people worth watching, with links to their X profiles and the habits that make their work worth following. Published 2026-10-27.
 
 ### [Curto Serif: The Free Open-Source Serif for 2026](https://devchauhan.in/writing/curto)
 

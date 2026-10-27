@@ -7,9 +7,18 @@
     {
       "source": "/curto",
       "destination": "/curto/index.html"
+    },
+    {
+      "source": "/writing/designers-to-follow-on-x",
+      "destination": "/writing/designers-to-follow-on-x/index.html"
     }
   ],
   "redirects": [
+    {
+      "source": "/writing/favorite-designers",
+      "destination": "/writing/designers-to-follow-on-x",
+      "permanent": true
+    },
     {
       "source": "/curto/license",
       "destination": "https://github.com/dqev/curto/blob/main/OFL.txt",
