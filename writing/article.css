@@ -1,8 +1,12 @@
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .card-content {
-  padding: var(--pad-card);
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: var(--gap-row);
+  gap: clamp(20px, 2.4vh, 28px);
   min-width: 0;
   max-width: 100%;
   overflow-x: hidden;
@@ -16,57 +20,67 @@
 }
 
 .card-content p {
-  font-size: var(--text-base);
+  font-size: clamp(17px, 1.35vw, 20px);
   font-weight: 500;
-  line-height: var(--leading-normal);
+  line-height: 1.62;
   color: var(--color-ink);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.012em;
 }
 
 .card-content a {
-  color: var(--color-muted);
+  color: var(--color-ink);
   text-decoration: underline;
   text-decoration-color: var(--color-line);
+  text-decoration-thickness: 1px;
   text-underline-offset: 3px;
-  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
 .card-content a:hover {
+  color: var(--color-accent);
+  text-decoration-color: var(--color-accent);
+}
+
+.card-content strong,
+.card-content b {
+  font-weight: 500;
   color: var(--color-ink);
-  text-decoration-color: var(--color-ink);
 }
 
 .card-content h2 {
-  font-size: var(--text-lg);
-  font-weight: 600;
+  font-size: clamp(28px, 3.2vw, 44px);
+  font-weight: 500;
   color: var(--color-ink);
-  letter-spacing: -0.015em;
-  line-height: var(--leading-tight);
-  margin-top: var(--space-4);
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+  margin-top: clamp(24px, 4vh, 44px);
 }
 
 .card-content h3 {
-  font-size: var(--text-md);
-  font-weight: 600;
+  font-size: clamp(20px, 2vw, 26px);
+  font-weight: 500;
   color: var(--color-ink);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.03em;
   line-height: var(--leading-tight);
-  margin-top: var(--space-2);
+  margin-top: var(--space-7);
 }
 
 .card-content ul,
 .card-content ol {
-  padding-left: var(--pad-card);
+  padding-left: var(--space-9);
   display: flex;
   flex-direction: column;
-  gap: var(--gap-list);
-  font-size: var(--text-base);
-  line-height: var(--leading-normal);
+  gap: var(--space-3);
+  font-size: clamp(17px, 1.35vw, 20px);
+  line-height: 1.62;
   color: var(--color-ink);
 }
 
+.card-content li::marker {
+  color: var(--color-subtle);
+}
+
 .card-content li strong {
-  font-weight: 600;
   color: var(--color-ink);
 }
 
@@ -78,7 +92,7 @@
 
 .card-content blockquote p {
   font-style: italic;
-  color: var(--color-ink);
+  color: var(--color-muted);
 }
 
 .pre-wrap {
@@ -92,7 +106,7 @@
 .card-content pre {
   background-color: var(--color-raised);
   border-radius: var(--radius-panel);
-  padding: var(--space-6) var(--space-9) var(--space-6) var(--space-7);
+  padding: var(--space-8) var(--space-10) var(--space-8) var(--space-8);
   font-family: var(--font-mono);
   font-size: var(--text-xs);
   line-height: var(--leading-snug);
@@ -130,10 +144,10 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   border-radius: 0 var(--radius-panel) 0 var(--radius-panel);
-  background-color: var(--color-surface);
+  background-color: var(--color-bg);
   color: var(--color-muted);
   display: inline-flex;
   align-items: center;
@@ -180,7 +194,7 @@
 .comparison {
   background: var(--color-raised);
   border-radius: var(--radius-panel);
-  padding: var(--space-6) var(--space-7);
+  padding: var(--space-6) var(--space-8);
   display: flex;
   flex-direction: column;
   gap: var(--gap-list);
@@ -196,7 +210,7 @@
 }
 
 .comparison-row strong {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--color-ink);
 }
 
@@ -208,19 +222,19 @@
 .faq {
   display: flex;
   flex-direction: column;
-  gap: var(--gap-list);
+  gap: var(--space-4);
 }
 
 .faq details {
   background: var(--color-raised);
   border-radius: var(--radius-panel);
-  padding: var(--space-6) var(--space-7);
+  padding: var(--space-6) var(--space-8);
   cursor: pointer;
   transition: background-color 0.15s ease;
 }
 
 .faq summary {
-  font-weight: 600;
+  font-weight: 500;
   font-size: var(--text-sm);
   color: var(--color-ink);
   list-style: none;

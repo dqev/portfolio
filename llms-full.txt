@@ -52,7 +52,7 @@ Free, open-source variable serif for editorial headlines and brand identities. F
 
 ## Writing
 
-The `/writing` index has been retired. The following articles are published at individual URLs.
+The writing index is available at https://devchauhan.in/writing/. The following articles are also published at individual URLs.
 
 ### [24 Designers and Design Engineers to Follow on X (2026)](https://devchauhan.in/writing/designers-to-follow-on-x)
 

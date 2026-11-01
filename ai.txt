@@ -38,7 +38,7 @@ Last updated: 2026-10-27
 - Full Text Reference: https://devchauhan.in/llms-full.txt
 - AI Reference: https://devchauhan.in/ai.txt
 
-The `/writing` index is retired. Articles are published at individual URLs.
+The writing index is available at https://devchauhan.in/writing/. Articles are also published at individual URLs.
 
 ## Published Articles
 
