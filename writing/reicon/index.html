@@ -21,7 +21,7 @@
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon/favicon-48x48.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="alternate" type="application/rss+xml" title="Dev Chauhan — Writing"
+  <link rel="alternate" type="application/rss+xml" title="Dev Chauhan - Writing"
     href="https://devchauhan.in/feed.xml" />
 
   <meta name="theme-color" content="#fafafa" />
@@ -54,7 +54,7 @@
   <meta name="twitter:description"
     content="Why I built Reicon: 2,700+ UI SVG icons on a strict 24x24 grid, tree-shaken across 7 frameworks, and built with native MCP for AI agents." />
   <meta name="twitter:image" content="https://devchauhan.in/assets/og/reicon.png" />
-  <meta name="twitter:image:alt" content="Building Reicon — SVG icon library" />
+  <meta name="twitter:image:alt" content="Building Reicon - SVG icon library" />
 
   <link rel="preload" href="/assets/font/Saans-Medium.woff2" as="font" type="font/woff2" crossorigin />
 
@@ -267,23 +267,35 @@
         width="1200" height="630" />
 
       <p>
-        Every frontend developer hits the same wall when building a real product: you pick an icon library, you design the first three screens, and then you need a specific icon for a filter drawer or export menu. The library does not have it.
+        Every frontend developer hits the same wall when building a real product: you pick an icon library, you design
+        the first three screens, and then you need a specific icon for a filter drawer or export menu. The library does
+        not have it.
       </p>
       <p>
-        So you hunt across a second library. Now your dashboard has two different stroke weights, mismatched corner radii, and inconsistent optical centers. It feels patched together.
+        So you hunt across a second library. Now your dashboard has two different stroke weights, mismatched corner
+        radii, and inconsistent optical centers. It feels patched together.
       </p>
       <p>
-        I built <a href="https://reicon.dev" target="_blank" rel="noopener noreferrer">Reicon</a> to solve that once and for all: a clean, unified open-source icon system of <strong>2,700+ UI SVG icons</strong> built on a disciplined 24x24 grid, distributed across 7 frameworks, and equipped with native MCP support so AI agents can query and use them without hallucinating paths.
+        I built <a href="https://reicon.dev" target="_blank" rel="noopener noreferrer">Reicon</a> to solve that once and
+        for all: a clean, unified open-source icon system of <strong>2,700+ UI SVG icons</strong> built on a disciplined
+        24x24 grid, distributed across 7 frameworks, and equipped with native MCP support so AI agents can query and use
+        them without hallucinating paths.
       </p>
 
       <h2>The Three Core Rules</h2>
       <p>
-        To keep a library of 2,700+ icons coherent across every category, every single glyph adheres to three non-negotiable rules:
+        To keep a library of 2,700+ icons coherent across every category, every single glyph adheres to three
+        non-negotiable rules:
       </p>
       <ol>
-        <li><strong>Strict 24x24 grid discipline.</strong> Every path sits within a 24x24 pixel boundary. Outlines use a precise 1.5px stroke with round terminals. Padding and optical weights are calibrated so a battery icon and an arrow share the exact same visual presence.</li>
-        <li><strong>Zero runtime bloat.</strong> Each icon is exported as an independent, tree-shakable component. Importing one icon adds only that single SVG to your bundle - no shared runtime overhead, no massive index files.</li>
-        <li><strong>Three unified style variations.</strong> Every icon is available in Outline, Filled, and Duotone so you never have to mix-and-match from different sources when your UI changes state.</li>
+        <li><strong>Strict 24x24 grid discipline.</strong> Every path sits within a 24x24 pixel boundary. Outlines use a
+          precise 1.5px stroke with round terminals. Padding and optical weights are calibrated so a battery icon and an
+          arrow share the exact same visual presence.</li>
+        <li><strong>Zero runtime bloat.</strong> Each icon is exported as an independent, tree-shakable component.
+          Importing one icon adds only that single SVG to your bundle - no shared runtime overhead, no massive index
+          files.</li>
+        <li><strong>Three unified style variations.</strong> Every icon is available in Outline, Filled, and Duotone so
+          you never have to mix-and-match from different sources when your UI changes state.</li>
       </ol>
 
       <h2>Interactive Style Preview</h2>
@@ -325,10 +337,12 @@
 
       <h2>One Dataset, Seven Package Ecosystems</h2>
       <p>
-        Managing thousands of SVG icons manually across multiple frameworks is unsustainable. Reicon uses a single compiler pipeline driven by a structured dataset at <code>data/icon-data.json</code>.
+        Managing thousands of SVG icons manually across multiple frameworks is unsustainable. Reicon uses a single
+        compiler pipeline driven by a structured dataset at <code>data/icon-data.json</code>.
       </p>
       <p>
-        When a new icon is added, the build script validates its stroke width and viewBox, runs SVG path compression, and compiles it into:
+        When a new icon is added, the build script validates its stroke width and viewBox, runs SVG path compression,
+        and compiles it into:
       </p>
       <ul>
         <li><strong>reicon-react</strong>: React components with full TypeScript support and ref forwarding.</li>
@@ -336,13 +350,17 @@
         <li><strong>reicon-svelte</strong>: Svelte 4 and 5 compatible components.</li>
         <li><strong>reicon_flutter</strong>: Native Flutter SVG widgets for mobile development.</li>
         <li><strong>reicon-figma</strong>: A dedicated Figma plugin for direct drag-and-drop design workflows.</li>
-        <li><strong>reicon-vscode</strong>: VS Code extension displaying inline icon previews next to import statements.</li>
-        <li><strong>reicon-mcp</strong>: Model Context Protocol server enabling AI agents to search and inspect icons programmatically.</li>
+        <li><strong>reicon-vscode</strong>: VS Code extension displaying inline icon previews next to import statements.
+        </li>
+        <li><strong>reicon-mcp</strong>: Model Context Protocol server enabling AI agents to search and inspect icons
+          programmatically.</li>
       </ul>
 
       <h2>Built for the AI Agent Era</h2>
       <p>
-        AI coding assistants (Cursor, Claude Code, Antigravity) are rewriting how software gets built. But icons remain a major friction point: models frequently hallucinate icon names that do not exist, or generate distorted inline SVGs with incorrect viewBox coordinates.
+        AI coding assistants (Cursor, Claude Code, Antigravity) are rewriting how software gets built. But icons remain
+        a major friction point: models frequently hallucinate icon names that do not exist, or generate distorted inline
+        SVGs with incorrect viewBox coordinates.
       </p>
       <p>
         Reicon solves this directly with <strong>reicon-mcp</strong>, a native Model Context Protocol server:
@@ -356,10 +374,12 @@
   }
 }</code></pre>
       <p>
-        With this configuration, your AI agent can query the entire Reicon catalog, retrieve exact component names, inspect viewBox dimensions, and drop verified icons directly into your code.
+        With this configuration, your AI agent can query the entire Reicon catalog, retrieve exact component names,
+        inspect viewBox dimensions, and drop verified icons directly into your code.
       </p>
       <p>
-        For lightweight agent workflows, Reicon also serves plain-text documentation endpoints at <code>reicon.dev/llms.txt</code> and <code>reicon.dev/llms-full.txt</code>.
+        For lightweight agent workflows, Reicon also serves plain-text documentation endpoints at
+        <code>reicon.dev/llms.txt</code> and <code>reicon.dev/llms-full.txt</code>.
       </p>
 
       <h2>Quick Start</h2>
@@ -385,13 +405,18 @@ export default function Dashboard() {
 
       <h2>Open Source &amp; Credits</h2>
       <p>
-        Reicon is 100% open-source under the MIT license. You can use it in personal projects, client work, commercial SaaS platforms, and digital products without restrictions.
+        Reicon is 100% open-source under the MIT license. You can use it in personal projects, client work, commercial
+        SaaS platforms, and digital products without restrictions.
       </p>
       <p>
-        The base geometry builds upon foundational elements from Solar Icons (designed by 480 Design, CC BY 4.0, package maintained by Saoudi H. under MIT) and Zappicon. The entire compiler pipeline, framework wrappers, MCP server, and documentation site are available on <a href="https://github.com/dqev/reicon" target="_blank" rel="noopener noreferrer">GitHub</a>.
+        The base geometry builds upon foundational elements from Solar Icons (designed by 480 Design, CC BY 4.0, package
+        maintained by Saoudi H. under MIT) and Zappicon. The entire compiler pipeline, framework wrappers, MCP server,
+        and documentation site are available on <a href="https://github.com/dqev/reicon" target="_blank"
+          rel="noopener noreferrer">GitHub</a>.
       </p>
       <p>
-        Explore the complete searchable catalog of 2,700+ icons with one-click SVG and JSX copying at <a href="https://reicon.dev" target="_blank" rel="noopener noreferrer">reicon.dev</a>.
+        Explore the complete searchable catalog of 2,700+ icons with one-click SVG and JSX copying at <a
+          href="https://reicon.dev" target="_blank" rel="noopener noreferrer">reicon.dev</a>.
       </p>
 
       <h2>Frequently Asked Questions</h2>
@@ -400,28 +425,35 @@ export default function Dashboard() {
           <summary>
             <span>Is Reicon completely free for commercial use?</span>
             <svg class="faq-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M8 3.5V12.5M3.5 8H12.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M8 3.5V12.5M3.5 8H12.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </summary>
-          <p>Yes. Reicon is licensed under the MIT license, meaning you can use, bundle, and modify it in commercial web apps, SaaS dashboards, mobile apps, and design systems with zero royalties.</p>
+          <p>Yes. Reicon is licensed under the MIT license, meaning you can use, bundle, and modify it in commercial web
+            apps, SaaS dashboards, mobile apps, and design systems with zero royalties.</p>
         </details>
         <details>
           <summary>
             <span>How does the MCP server work with AI tools?</span>
             <svg class="faq-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M8 3.5V12.5M3.5 8H12.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M8 3.5V12.5M3.5 8H12.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </summary>
-          <p>The reicon-mcp package runs locally through NPX. When configured in tools like Cursor, Claude Code, or Antigravity, the AI assistant calls MCP endpoints to retrieve exact icon names, SVG code, and JSX components without hallucinating non-existent glyphs.</p>
+          <p>The reicon-mcp package runs locally through NPX. When configured in tools like Cursor, Claude Code, or
+            Antigravity, the AI assistant calls MCP endpoints to retrieve exact icon names, SVG code, and JSX components
+            without hallucinating non-existent glyphs.</p>
         </details>
         <details>
           <summary>
             <span>Can I request new icons or contribute?</span>
             <svg class="faq-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M8 3.5V12.5M3.5 8H12.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M8 3.5V12.5M3.5 8H12.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </summary>
-          <p>Yes. The entire build pipeline is open on GitHub at dqev/reicon. You can submit SVG paths via issues or pull requests to be validated and compiled into all seven package distributions.</p>
+          <p>Yes. The entire build pipeline is open on GitHub at dqev/reicon. You can submit SVG paths via issues or
+            pull requests to be validated and compiled into all seven package distributions.</p>
         </details>
       </div>
     </article>
