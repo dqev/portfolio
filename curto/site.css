@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Curto Serif";
-  src: url("/assets/webfonts/CurtoSerif%5Bwght%5D.woff2") format("woff2-variations");
+  src: url("/assets/webfonts/CurtoSerif%5Bwght%5D.woff2?v=2") format("woff2");
   font-weight: 400 700;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Curto Serif";
-  src: url("/assets/webfonts/CurtoSerif-Italic%5Bwght%5D.woff2") format("woff2-variations");
+  src: url("/assets/webfonts/CurtoSerif-Italic%5Bwght%5D.woff2?v=2") format("woff2");
   font-weight: 400 700;
   font-style: italic;
   font-display: swap;
@@ -89,11 +89,14 @@ a { color: inherit; }
   margin: 0;
   font-family: "Curto Serif", Georgia, serif;
   font-weight: var(--hero-weight, 400);
+  font-variation-settings: "wght" var(--hero-weight, 400);
+  font-synthesis: weight;
   font-size: clamp(64px, 14vw, 188px);
   line-height: var(--hero-leading, .88);
   letter-spacing: var(--hero-tracking, 0em);
   max-width: 100%;
   min-width: 8ch;
+  white-space: pre-wrap;
   overflow-wrap: anywhere;
   cursor: url("/curto/text-cursor.png") 8 8, text;
   caret-color: var(--accent);
