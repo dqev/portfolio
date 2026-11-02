@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Curto Serif";
-  src: url("/assets/webfonts/CurtoSerif%5Bwght%5D.woff2?v=2") format("woff2");
+  src: url("/assets/webfonts/CurtoSerif-VF.woff2?v=3") format("woff2");
   font-weight: 400 700;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Curto Serif";
-  src: url("/assets/webfonts/CurtoSerif-Italic%5Bwght%5D.woff2?v=2") format("woff2");
+  src: url("/assets/webfonts/CurtoSerif-Italic-VF.woff2?v=3") format("woff2");
   font-weight: 400 700;
   font-style: italic;
   font-display: swap;
@@ -87,7 +87,7 @@ a { color: inherit; }
 
 .hero-title {
   margin: 0;
-  font-family: "Curto Serif", Georgia, serif;
+  font-family: "Curto Serif", Georgia, "Times New Roman", Times, serif;
   font-weight: var(--hero-weight, 400);
   font-variation-settings: "wght" var(--hero-weight, 400);
   font-synthesis: weight;
