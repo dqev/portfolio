@@ -4,7 +4,7 @@
 
 Dev Chauhan is a designer and developer based in India studying Computer Science and Engineering (B.Tech). He builds high-performance web applications, icon systems, and developer tools using React, TypeScript, JavaScript, and Supabase.
 
-Last updated: 2026-10-27
+Last updated: 2026-11-16
 
 ## Profile & Contact
 
@@ -44,6 +44,10 @@ Free, open-source variable serif for editorial headlines and brand identities. W
 ## Writing
 
 The writing index is available at https://devchauhan.in/writing/. Articles are also published at individual URLs.
+
+### [Spoil Your Notebook](https://devchauhan.in/writing/spoil-your-notebook)
+
+A simple trick to stop worrying about keeping your notebook perfect, and start actually writing in it. Spoil page one on purpose — once it's ruined, the rest stops feeling precious. Published 2026-11-16.
 
 ### [24 Designers and Design Engineers to Follow on X (2026)](https://devchauhan.in/writing/designers-to-follow-on-x)
 
