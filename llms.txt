@@ -1,0 +1,13 @@
+# Dev Chauhan
+
+> I'm Dev Chauhan. I design and code for the web, and maintain Reicon and shaape.co, an open-source icon and abstract shape library helping designers and developers.
+
+## Projects
+- [Reicon](https://reicon.dev/): Open-source icon library.
+- [shaape.co](https://shaape.co): Abstract shape library helping designers and developers.
+
+## Contact & Profiles
+- GitHub: https://github.com/dqev
+- X (Twitter): https://x.com/devchauhann3
+- WhatsApp: https://wa.me/918449933999
+- Telegram: https://t.me/devchauhann3
