@@ -3,6 +3,7 @@
 > I'm Dev Chauhan. I design and code for the web, and maintain Reicon and shaape.co, an open-source icon and abstract shape library helping designers and developers.
 
 ## Projects
+- [Curto Serif](https://devc.in/curto): Free, open-source display serif font for editorial design.
 - [Reicon](https://reicon.dev/): Open-source icon library.
 - [shaape.co](https://shaape.co): Abstract shape library helping designers and developers.
 
